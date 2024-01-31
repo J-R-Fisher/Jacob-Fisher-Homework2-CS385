@@ -1,5 +1,99 @@
-
 body
 {
     margin: 0;
+}
+
+.tabButtons
+{
+    text-align: center;
+}
+
+.tabButton
+{
+    background-color: white;
+    border: none;
+}
+
+.bt_active
+{
+    background-color: red;
+}
+
+
+.stat_box_main
+{
+    display: flex;
+    flex-direction: row;
+
+    width: fit-content;
+
+    padding: 12px;
+    margin: 12px;
+    
+    border: solid;
+    border-radius: 15px;
+    border-style: groove;
+    border-width: 5px;
+
+    text-align: center;
+}
+
+.stat_box_main div
+{
+    margin-left: 5%;
+}
+
+.stat_box_internal
+{
+    display: flex;
+    flex-direction: row;
+
+    margin-left: 1%;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    width: fit-content;
+    height: fit-content;
+    
+    border: solid;
+    border-radius: 15px;
+    border-style: groove;
+    border-width: 5px;
+}
+
+.stat_box_internal p
+{
+    margin-left: 2.5px;
+    margin-right: 5px;
+}
+
+.row_display
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.str_row
+{
+    color:red;
+}
+
+.dex_row
+{
+    color:green;
+}
+
+.int_row
+{
+    color:blue;
+}
+
+.pc_active
+{
+    display: block;
+}
+
+.pc_inactive
+{
+    display: none;
 }

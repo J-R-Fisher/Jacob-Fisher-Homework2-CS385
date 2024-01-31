@@ -4,7 +4,8 @@ CS385
 Spring 2024
 
 This is a website that will allow you to create mock-ups
-of character builds for the game Ultima Online, save them to an account and 
+of character builds for the game Ultima Online, save them to an account and
+also manage their random loot gear.
 -->
 
 
@@ -20,7 +21,228 @@ of character builds for the game Ultima Online, save them to an account and
 <!---------------------[ BODY START ]--------------------------->
 
     <body>
-        hello
+<!---------------------[ NAVBAR START ]------------------------->
+        <div id="navbar" style="text-align: center;">
+            <h1>UO Character Planner</h1>
+        </div>
+
+<!---------------------[ CONTENT START ]------------------------>
+        <div class="tabButtons">
+            <button class="tabButton bt_active" onclick="toggleTabs('stats')">   Stats    </button>
+            <button class="tabButton" onclick="toggleTabs('skills')">            Skills   </button>
+            <button class="tabButton" onclick="toggleTabs('gear')">              Gear     </button>
+            <button class="tabButton" onclick="toggleTabs('melee')">             Melee    </button>
+            <button class="tabButton" onclick="toggleTabs('magic')">             Magic    </button>
+            <button class="tabButton" onclick="toggleTabs('other')">             Other    </button>
+        </div>
+<!---------------------[ STATS START ]------------------------->
+        <div id="stats" class="pageContent pc_active">
+            <p>stats</p>
+            <p>This page is going to have inputs for the choosable base attributes</p>
+            <p>It's also going to have the display components for each stat.</p>\
+
+                <table class="stat_table">
+                    <!---------------------[ STR ROW ]------------------------->
+                    <tr>
+                        <td class="row_display str_row">
+                            
+                            <div class="stat_box_main">
+                                <p class="stat_name">STR</p>
+                                <div class="stat_box_internal">
+                                    <p class="statValue">10</p>   <p>/</p>   <p class="statValue">150</p>
+                                </div>
+                            </div>
+
+                            <div class="stat_box_main">
+                                <p class="stat_name">HP</p>
+                                <div class="stat_box_internal">
+                                    <p class="statValue">55</p>   <p>/</p>   <p class="statValue">150</p>
+                                </div>
+                            </div>
+
+                            <div class="stat_box_main">
+                                <p class="stat_name">HPR</p>
+                                <div class="stat_box_internal">
+                                    <p class="statValue">0</p>   <p>/</p>   <p class="statValue">18</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <!---------------------[ DEX ROW ]------------------------->
+                    <tr>
+                        <td class="row_display dex_row">
+                            
+                            <div class="stat_box_main">
+                                <p class="stat_name">DEX</p>
+                                <div class="stat_box_internal">
+                                    <p class="statValue">10</p>   <p>/</p>   <p class="statValue">150</p>
+                                </div>
+                            </div>
+
+                            <div class="stat_box_main">
+                                <p class="stat_name">STAM</p>
+                                <div class="stat_box_internal">
+                                    <p class="statValue">10</p>   <p>/</p>   <p class="statValue">300</p>
+                                </div>
+                            </div>
+
+                            <div class="stat_box_main">
+                                <p class="stat_name">SR</p>
+                                <div class="stat_box_internal">
+                                    <p class="statValue">0</p>   <p>/</p>   <p class="statValue">32</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!---------------------[ INT ROW ]------------------------->
+                    <tr>
+                        <td class="row_display int_row">
+                            
+                            <div class="stat_box_main">
+                                <p class="stat_name">INT</p>
+                                <div class="stat_box_internal">
+                                    <p class="statValue">10</p>   <p>/</p>   <p class="statValue">150</p>
+                                </div>
+                            </div>
+
+                            <div class="stat_box_main">
+                                <p class="stat_name">MANA</p>
+                                <div class="stat_box_internal">
+                                    <p class="statValue">10</p>   <p>/</p>   <p class="statValue">300</p>
+                                </div>
+                            </div>
+
+                            <div class="stat_box_main">
+                                <p class="stat_name">MR</p>
+                                <div class="stat_box_internal">
+                                    <p class="statValue">0</p>   <p>/</p>   <p class="statValue">32</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!---------------------[ COMBAT ROW ]------------------------->
+                    <tr>
+                        <td class="row_display combat_row">
+                            
+                            <div class="stat_box_main">
+                                <p class="stat_name">HCI</p>
+                                <div class="stat_box_internal">
+                                    <p class="statValue">0</p>   <p>/</p>   <p class="statValue">45</p>
+                                </div>
+                            </div>
+
+                            <div class="stat_box_main">
+                                <p class="stat_name">DCI</p>
+                                <div class="stat_box_internal">
+                                    <p class="statValue">0</p>   <p>/</p>   <p class="statValue">45</p>
+                                </div>
+                            </div>
+
+                            <div class="stat_box_main">
+                                <p class="stat_name">SSI</p>
+                                <div class="stat_box_internal">
+                                    <p class="statValue">0</p>   <p>/</p>   <p class="statValue">60</p>
+                                </div>
+                            </div>
+
+                            <div class="stat_box_main">
+                                <p class="stat_name">DI</p>
+                                <div class="stat_box_internal">
+                                    <p class="statValue">0</p>   <p>/</p>   <p class="statValue">100</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!---------------------[ CASTING ROW ]------------------------->
+                    <tr>
+                        <td class="row_display casting_row">
+                            
+                            <div class="stat_box_main">
+                                <p class="stat_name">FC</p>
+                                <div class="stat_box_internal">
+                                    <p class="statValue">0</p>   <p>/</p>   <p class="statValue">4</p>
+                                </div>
+                            </div>
+
+                            <div class="stat_box_main">
+                                <p class="stat_name">FCR</p>
+                                <div class="stat_box_internal">
+                                    <p class="statValue">0</p>   <p>/</p>   <p class="statValue">6</p>
+                                </div>
+                            </div>
+
+                            <div class="stat_box_main">
+                                <p class="stat_name">SDI</p>
+                                <div class="stat_box_internal">
+                                    <p class="statValue">0</p>   <p>/</p>   <p class="statValue">400</p>
+                                </div>
+                            </div>
+
+                            <div class="stat_box_main">
+                                <p class="stat_name">LRC</p>
+                                <div class="stat_box_internal">
+                                    <p class="statValue">0</p>   <p>/</p>   <p class="statValue">100</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!---------------------[ MISC ROW ]------------------------->
+                    <tr>
+                        <td class="row_display misc_row">
+                            
+                            <div class="stat_box_main">
+                                <p class="stat_name">LMC</p>
+                                <div class="stat_box_internal">
+                                    <p class="statValue">0</p>   <p>/</p>   <p class="statValue">45</p>
+                                </div>
+                            </div>
+
+                            <div class="stat_box_main">
+                                <p class="stat_name">LUCK</p>
+                                <div class="stat_box_internal">
+                                    <p class="statValue">0</p>   <p>/</p>   <p class="statValue">4200</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                </table>
+                <!---------------------[ END OF STAT TABLE ]------------------------->
+
+            </div>
+        </div>
+
+<!---------------------[ SKILLS START ]------------------------>
+        <div id="skills" class="pageContent pc_inactive">
+            <p>skills</p>
+        </div>
+
+<!---------------------[ GEAR START ]-------------------------->
+        <div id="gear" class="pageContent pc_inactive">
+            <p>gear</p>
+        </div>
+
+<!---------------------[ MELEE START ]------------------------->
+        <div id="melee" class="pageContent pc_inactive">
+            <p>melee</p>
+        </div>
+
+<!---------------------[ MAGIC START ]------------------------->
+        <div id="magic" class="pageContent pc_inactive">
+            <p>magic</p>
+        </div>
+
+<!---------------------[ OTHER START ]------------------------->
+        <div id="other" class="pageContent pc_inactive">
+            <p>other</p>
+        </div>
+        
+<!-----------------------[ BODY END ]-------------------------->
     </body>
-<!-------------------------------------------------------------->
+<!------------------------------------------------------------->
 </html>
