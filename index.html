@@ -28,15 +28,15 @@ also manage their random loot gear.
 
 <!---------------------[ CONTENT START ]------------------------>
         <div class="tabButtons">
-            <button class="tabButton bt_active" onclick="toggleTabs('stats')">   Stats    </button>
+            <button class="tabButton" onclick="toggleTabs('stats')">   Stats    </button>
             <button class="tabButton" onclick="toggleTabs('skills')">            Skills   </button>
-            <button class="tabButton" onclick="toggleTabs('gear')">              Gear     </button>
+            <button class="tabButton bt_active" onclick="toggleTabs('gear')">              Gear     </button>
             <button class="tabButton" onclick="toggleTabs('melee')">             Melee    </button>
             <button class="tabButton" onclick="toggleTabs('magic')">             Magic    </button>
             <button class="tabButton" onclick="toggleTabs('other')">             Other    </button>
         </div>
 <!---------------------[ STATS START ]------------------------->
-        <div id="stats" class="pageContent pc_active">
+        <div id="stats" class="pageContent pc_inactive">
             <p>stats</p>
             <p>This page is going to have inputs for the choosable base attributes</p>
             <p>It's also going to have the display components for each stat.</p>\
@@ -223,8 +223,175 @@ also manage their random loot gear.
         </div>
 
 <!---------------------[ GEAR START ]-------------------------->
-        <div id="gear" class="pageContent pc_inactive">
-            <p>gear</p>
+        <div id="gear" class="pageContent pc_active">
+            <p>3 Columns of gear slot boxes. ---- click on gear slot to replace the item in the slot ---- hover over item icon to display its stats</p>
+            <p> When selecting an item it will generate a list that pops up with all possible items that could fit in the slot</p>
+            <p> form to add items to the list of items / login to save your items -> db, form, user generated content</p>
+            <p> search the list of items for names / properties / etc </p>
+            <p> stats from gear is applied to the stats. Hover over items to reveal stats, hover over stats to reveal source breakdown</p>
+
+            <div class="gear_box_main">
+                <p>slot name</p>
+                <div class="gear_box_sub">
+                    <p>item name</p>
+                    <img src="./resources/images/helmetIcon.png">
+                </div>
+            </div>
+
+            <div class="gear_content">
+
+                <div class="gear_column">
+
+                    <div class="gear_box_main">
+                        <p>slot name</p>
+                        <div class="gear_box_sub">
+                            <p>item name</p>
+                            <img src="./resources/images/helmetIcon.png">
+                        </div>
+                    </div>
+                    
+                    <div class="gear_box_main">
+                        <p>slot name</p>
+                        <div class="gear_box_sub">
+                            <p>item name</p>
+                            <img src="./resources/images/helmetIcon.png">
+                        </div>
+                    </div>
+
+                    <div class="gear_box_main">
+                        <p>slot name</p>
+                        <div class="gear_box_sub">
+                            <p>item name</p>
+                            <img src="./resources/images/helmetIcon.png">
+                        </div>
+                    </div>
+
+                    <div class="gear_box_main">
+                        <p>slot name</p>
+                        <div class="gear_box_sub">
+                            <p>item name</p>
+                            <img src="./resources/images/helmetIcon.png">
+                        </div>
+                    </div>
+
+                    <div class="gear_box_main">
+                        <p>slot name</p>
+                        <div class="gear_box_sub">
+                            <p>item name</p>
+                            <img src="./resources/images/helmetIcon.png">
+                        </div>
+                    </div>
+
+                    <div class="gear_box_main">
+                        <p>slot name</p>
+                        <div class="gear_box_sub">
+                            <p>item name</p>
+                            <img src="./resources/images/helmetIcon.png">
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="gear_column">
+                    <div class="gear_box_main">
+                        <p>slot name</p>
+                        <div class="gear_box_sub">
+                            <p>item name</p>
+                            <img src="./resources/images/helmetIcon.png">
+                        </div>
+                    </div>
+                    
+                    <div class="gear_box_main">
+                        <p>slot name</p>
+                        <div class="gear_box_sub">
+                            <p>item name</p>
+                            <img src="./resources/images/helmetIcon.png">
+                        </div>
+                    </div>
+
+                    <div class="gear_box_main">
+                        <p>slot name</p>
+                        <div class="gear_box_sub">
+                            <p>item name</p>
+                            <img src="./resources/images/helmetIcon.png">
+                        </div>
+                    </div>
+
+                    <div class="gear_box_main">
+                        <p>slot name</p>
+                        <div class="gear_box_sub">
+                            <p>item name</p>
+                            <img src="./resources/images/helmetIcon.png">
+                        </div>
+                    </div>
+
+                    <div class="gear_box_main">
+                        <p>slot name</p>
+                        <div class="gear_box_sub">
+                            <p>item name</p>
+                            <img src="./resources/images/helmetIcon.png">
+                        </div>
+                    </div>
+
+                    <div class="gear_box_main">
+                        <p>slot name</p>
+                        <div class="gear_box_sub">
+                            <p>item name</p>
+                            <img src="./resources/images/helmetIcon.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gear_column">
+                    <div class="gear_box_main">
+                        <p>slot name</p>
+                        <div class="gear_box_sub">
+                            <p>item name</p>
+                            <img src="./resources/images/helmetIcon.png">
+                        </div>
+                    </div>
+                    
+                    <div class="gear_box_main">
+                        <p>slot name</p>
+                        <div class="gear_box_sub">
+                            <p>item name</p>
+                            <img src="./resources/images/helmetIcon.png">
+                        </div>
+                    </div>
+
+                    <div class="gear_box_main">
+                        <p>slot name</p>
+                        <div class="gear_box_sub">
+                            <p>item name</p>
+                            <img src="./resources/images/helmetIcon.png">
+                        </div>
+                    </div>
+
+                    <div class="gear_box_main">
+                        <p>slot name</p>
+                        <div class="gear_box_sub">
+                            <p>item name</p>
+                            <img src="./resources/images/helmetIcon.png">
+                        </div>
+                    </div>
+
+                    <div class="gear_box_main">
+                        <p>slot name</p>
+                        <div class="gear_box_sub">
+                            <p>item name</p>
+                            <img src="./resources/images/helmetIcon.png">
+                        </div>
+                    </div>
+
+                    <div class="gear_box_main">
+                        <p>slot name</p>
+                        <div class="gear_box_sub">
+                            <p>item name</p>
+                            <img src="./resources/images/helmetIcon.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
 <!---------------------[ MELEE START ]------------------------->

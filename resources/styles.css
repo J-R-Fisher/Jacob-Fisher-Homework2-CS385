@@ -57,7 +57,7 @@ body
     
     border: solid;
     border-radius: 15px;
-    border-style: groove;
+    border-style: inset;
     border-width: 5px;
 }
 
@@ -96,4 +96,57 @@ body
 .pc_inactive
 {
     display: none;
+}
+
+.gear_box_main
+{
+    display: flex;
+    flex-direction: row;
+
+    border: solid;
+    border-radius: 15px;
+    border-style: groove;
+    border-width: 5px;
+
+    padding-left: 10px;
+    
+    width: fit-content;
+    height: fit-content;
+}
+
+.gear_box_main p
+{
+    margin-right: 15px;
+}
+
+.gear_box_sub
+{
+    border: solid;
+    border-radius: 15px;
+    border-style: inset;
+    border-width: 5px;
+
+    display: flex;
+    flex-direction: inherit;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    height: fit-content;
+    width: fit-content;
+}
+
+.gear_content
+{
+    display: flex;
+    flex-direction: row;
+
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.gear_column
+{
+    margin-right: 5%;
 }
